@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FSA TechStore 🛍️
 
 Une boutique en ligne dédiée aux étudiants et professeurs de la **Faculté des Sciences d'Agadir** (FSA).
@@ -100,7 +99,7 @@ Accueil → S'inscrire/Se connecter → Produits → Facture → PDF
 - [ ] Paiement en ligne (Stripe, PayPal, etc.)
 - [ ] Système de promotion et codes promo
 - [ ] Interface administrateur pour gérer les produits
-- [ ] Notifications par email
+- [ ] Notifications par email.
 
 
 ## 👤 Auteur
@@ -111,8 +110,4 @@ Accueil → S'inscrire/Se connecter → Produits → Facture → PDF
 
 ---
 
-**Faculté des Sciences d'Agadir** 🎓  
-=======
-# FSA-TechStore
-first website project
->>>>>>> parent of 40b6562 (Update README.md)
+🎓 **Faculté des Sciences d'Agadir** 🎓  
