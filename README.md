@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FSA TechStore 🛍️
 
 Une boutique en ligne dédiée aux étudiants et professeurs de la **Faculté des Sciences d'Agadir** (FSA).
@@ -28,7 +29,6 @@ Cette boutique propose une sélection de matériel informatique adapté aux beso
 - **HTML5** : Structure et mise en page
 - **CSS3** : Stylisation et design responsive
 - **JavaScript (Vanilla)** : Logique côté client et gestion des états
-- **Aucune dépendance externe** : Application légère et autonome
 
 ## 📦 Produits Disponibles
 
@@ -53,7 +53,7 @@ Cette boutique propose une sélection de matériel informatique adapté aux beso
 
 1. **Cloner le dépôt**
    ```bash
-   git clone https://github.com/votre-nom/FSA-TechStore.git
+   git clone https://github.com/Salah-eddine-Ouaddi/FSA-TechStore.git
    cd FSA-TechStore
    ```
 
@@ -91,12 +91,6 @@ L'application référence les images suivantes (à ajouter au dossier) :
 Accueil → S'inscrire/Se connecter → Produits → Facture → PDF
 ```
 
-## 💾 Stockage des Données
-
-Actuellement, l'application stocke les données des utilisateurs en mémoire locale (variables JavaScript). Les données sont réinitialisées lors du rechargement de la page.
-
-**Note** : Pour une utilisation en production, il est recommandé d'intégrer une base de données backend.
-
 ## 🔧 Fonctionnalités Futures
 
 - [ ] Intégration d'une base de données (MongoDB, MySQL, etc.)
@@ -108,33 +102,17 @@ Actuellement, l'application stocke les données des utilisateurs en mémoire loc
 - [ ] Interface administrateur pour gérer les produits
 - [ ] Notifications par email
 
-## 📸 Captures d'écran
-
-_(À ajouter : captures d'écran de l'accueil, du catalogue et de la facture)_
-
-## 🤝 Contribution
-
-Les contributions sont bienvenues ! Pour contribuer :
-1. Forker le projet
-2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commiter vos modifications (`git commit -m 'Add some AmazingFeature'`)
-4. Pousser la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
-
-## 📝 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## 👤 Auteur
 
-**Votre Nom** - Projet étudiant FSA TechStore
-- GitHub : [@votre-username](https://github.com/votre-username)
+**Ouaddi Salah eddine** - Projet étudiant FSA TechStore
+- GitHub : [@Salah-eddine-Ouaddi](https://github.com/Salah-eddine-Ouaddi)
 
-## 📞 Support
-
-Pour toute question ou problème, veuillez ouvrir une issue sur GitHub ou contacter directement l'auteur.
 
 ---
 
 **Faculté des Sciences d'Agadir** 🎓  
-Dernière mise à jour : Mai 2026
+=======
+# FSA-TechStore
+first website project
+>>>>>>> parent of 40b6562 (Update README.md)
