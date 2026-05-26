@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSA TechStore</title>
+  <link rel="stylesheet" href="FSA TechStore.css">
+</head>
+<body>
+  <!-- Header avec logo -->
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1><strong>FSA TechStore</strong><br><i><small style="font-size:15px;"> boutique informatique dédiée à la communauté FSA.</small></i></h1>
+    
+  </header>
+
+  <!-- Barre de navigation -->
+  <div class="navbar">
+    <button onclick="showPage('accueil')">Accueil</button>
+    <button onclick="showPage('inscription')">S'inscrire</button>
+    <button onclick="showPage('connexion')">Se connecter</button>
+    <button onclick="showPage('apropos')">À propos</button>
+  </div>
+
+  <!-- Accueil -->
+  <div id="accueil" class="page" style="display: block;">
+    <h2>Bienvenue</h2>
+    <p>Découvrez nos produits :</p>
+  
+    <div class="catalogue">
+      <div class="produit">
+        <img src="ordinateur.png" alt="Ordinateur">
+        <p><strong>Ordinateur</strong><br>Idéal pour les projets académiques et la programmation.<br>8000 DH</p>
+      </div>
+      <div class="produit">
+        <img src="clavier.png" alt="Clavier">
+        <p><strong>Clavier</strong><br>Confortable pour la rédaction de rapports et mémoires.<br>300 DH</p>
+      </div>
+      <div class="produit">
+        <img src="souris.png" alt="Souris">
+        <p><strong>Souris</strong><br>Précise pour la bureautique et les travaux pratiques.<br>100 DH</p>
+      </div>
+      <div class="produit">
+        <img src="casque.png" alt="Casque">
+        <p><strong>Casque</strong><br>Parfait pour suivre des cours en ligne et des conférences<br>200 DH</p>
+      </div>
+      <div class="produit">
+        <img src="usb.png" alt="Clé USB">
+        <p><strong>Clé USB</strong><br>Stockage pratique pour partager vos travaux entre étudiants.<br>80 DH</p>
+      </div>
+      <div class="produit">
+        <img src="moniteur.png" alt="Moniteur">
+        <p><strong>Moniteur</strong><br>Grand écran pour la recherche et la visualisation de données.<br>1500 DH</p>
+      </div>
+      <div class="produit">
+        <img src="pcportable.png" alt="PC Portable">
+        <p><strong>PC Portable</strong><br>Mobilité et performance pour les cours et la bibliothèque.<br>6000 DH</p>
+      </div>
+      <div class="produit">
+        <img src="imprimante.png" alt="Imprimante">
+        <p><strong>Imprimante</strong><br>Impression rapide de vos polycopiés et documents.<br>1200 DH</p>
+      </div>
+      <div class="produit">
+        <img src="routeur.png" alt="Routeur">
+        <p><strong>Routeur</strong><br>Connexion internet stable pour vos études et recherches.<br>500 DH</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Inscription -->
+  <div id="inscription" class="page">
+    <h2>Inscription</h2>
+    <input id="nom" placeholder="Nom"><br>
+    <input id="email" placeholder="Email"><br>
+    <input id="pass" type="password" placeholder="Mot de passe"><br>
+    <button class="action" onclick="inscrire()">S'inscrire</button>
+    <button class="action" onclick="showPage('accueil')">Retour</button>
+  </div>
+
+  <!-- Message inscription -->
+  <div id="inscriptionOK" class="page">
+    <p style="color:green">Inscription réussie</p>
+    <button class="action" onclick="showPage('connexion')">OK</button>
+  </div>
+
+  <!-- Connexion -->
+  <div id="connexion" class="page">
+    <h2>Connexion</h2>
+    <input id="loginEmail" placeholder="Email"><br>
+    <input id="loginPass" type="password" placeholder="Mot de passe"><br>
+    <button class="action" onclick="connecter()">Se connecter</button>
+  </div>
+
+  <!-- Message erreur login -->
+  <div id="erreurLogin" class="page">
+    <p style="color:red">Erreur login</p>
+    <button class="action" onclick="showPage('connexion')">OK</button>
+  </div>
+
+  <!-- Message connexion réussie -->
+  <div id="connexionOK" class="page">
+    <p style="color:green">Connexion réussie</p>
+    <button class="action" onclick="showPage('produits')">OK</button>
+  </div>
+
+  <!-- Produits -->
+  <div id="produits" class="page">
+    <h2>Produits</h2>
+    <label><input type="checkbox" value="Ordinateur-8000"> Ordinateur (8000 DH)</label><br>
+    <label><input type="checkbox" value="Clavier-300"> Clavier (300 DH)</label><br>
+    <label><input type="checkbox" value="Souris-100"> Souris (100 DH)</label><br>
+    <label><input type="checkbox" value="Casque-200"> Casque (200 DH)</label><br>
+    <label><input type="checkbox" value="USB-80"> Clé USB (80 DH)</label><br>
+    <label><input type="checkbox" value="Moniteur-1500"> Moniteur (1500 DH)</label><br>
+    <label><input type="checkbox" value="PC Portable-6000"> PC Portable (6000 DH)</label><br>
+    <label><input type="checkbox" value="Imprimante-1200"> Imprimante (1200 DH)</label><br>
+    <label><input type="checkbox" value="Routeur-500"> Routeur (500 DH)</label><br>
+
+    <button class="action" onclick="genererFacture()">Générer facture</button>
+  </div>
+
+
+  <!-- Facture -->
+  <div id="facture" class="page">
+    <h2>FACTURE</h2>
+    <p id="factureClient"></p>
+    <p id="factureProduits"></p>
+    <p id="factureTotal"></p>
+    <button class="action" onclick="telechargerFacturePDF()">Télécharger PDF</button><br>
+    <button class="action" onclick="showPage('produits')">Nouvelle commande</button>
+    <button class="action" onclick="showPage('connexion')">Déconnexion</button>
+  </div>
+
+  <!-- À propos -->
+  <div id="apropos" class="page">
+    <h2>À propos</h2>
+    <p>
+      Bienvenue sur <strong>FSA TechStore</strong>, la boutique en ligne dédiée aux étudiants et professeurs
+      de la Faculté des Sciences d'Agadir. Nous proposons une sélection de matériel informatique
+      adapté aux besoins académiques et professionnels.
+    </p>
+    <p>
+      Notre objectif est de faciliter l'accès aux outils numériques essentiels pour l'apprentissage,
+      la recherche et l'enseignement, avec des prix accessibles et une expérience d'achat simple.
+    </p>
+  </div>
+
+<script src="FSA TechStore.js"></script>
+</body>
+</html>
