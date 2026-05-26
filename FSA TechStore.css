@@ -1,0 +1,108 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+}
+header img {
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 10%;
+}
+
+
+p {
+  text-align: center;
+  margin: 10px;
+}
+
+
+.navbar {
+  background-color: #020202;
+  overflow: hidden;
+  text-align: center;
+}
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.navbar button:hover {
+  background-color: #293036;
+}
+
+
+div.page {
+  display: none;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  max-width: 1200px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+
+input {
+  margin: 5px;
+  padding: 8px;
+  width: 90%;
+}
+button.action {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button.action:hover {
+  background-color: #4d545c;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+.produit {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  padding: 15px;
+}
+.produit img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+#produits {
+  text-align: center;
+}
+#produits label {
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 16px;
+}
